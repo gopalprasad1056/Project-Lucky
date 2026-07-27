@@ -1,7 +1,7 @@
 // Hide loading screen after 2.5 seconds
 window.addEventListener("load", () => {
     setTimeout(() => {
-            const loading = document.getElementById("loading");
+            const loading = document.getElementById("loading-screen");
                     if (loading) {
                                 loading.style.opacity = "0";
                                             setTimeout(() => {
