@@ -29,3 +29,7 @@ window.addEventListener("load", () => {
                                                                                                                                 }
 
                                                                                                                                 setInterval(createHeart, 300);
+                                                                                                                                // Open Surprise button
+                                                                                                                                document.getElementById("startBtn").addEventListener("click", () => {
+                                                                                                                                    alert("Happy Birthday Lucky! ❤️");
+                                                                                                                                    });
