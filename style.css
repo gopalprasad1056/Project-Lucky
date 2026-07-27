@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
         margin:0;
             padding:0;
@@ -6,7 +8,13 @@
 
                 body{
                     font-family:Poppins,sans-serif;
-                        background:linear-gradient(135deg,#1b0033,#3f0071,#ff4d8d);
+                        background:
+                        radial-gradient(circle at top left,#ff4d8d55 0%,transparent 35%),
+                        radial-gradient(circle at top right,#b400ff55 0%,transparent 30%),
+                        radial-gradient(circle at bottom,#6a00ff44 0%,transparent 40%),
+                        linear-gradient(135deg,#12001f,#2b003d,#43005d,#1a0028);
+                        background-size:cover;
+                        background-attachment:fixed;
                             color:#fff;
                                 overflow:hidden;
                                 }
@@ -14,7 +22,7 @@
                                 #loading-screen{
                                     position:fixed;
                                         inset:0;
-                                            display:flex;
+                                             display:flex;
                                                 flex-direction:column;
                                                     justify-content:center;
                                                         align-items:center;
@@ -79,4 +87,60 @@
                                                                                                                                                                                         transform:scale(1.08);
                                                                                                                                                                                             background:#ff2b74;
                                                                                                                                                                                             }
+
+                                                                                                                                                                                           /* ===== Floating Purple Glow Orbs ===== */
+
+                                                                                                                                                                                           .bg-effects{
+                                                                                                                                                                                               position:fixed;
+                                                                                                                                                                                                   inset:0;
+                                                                                                                                                                                                       overflow:hidden;
+                                                                                                                                                                                                           z-index:-1;
+                                                                                                                                                                                                               pointer-events:none;
+                                                                                                                                                                                                               }
+
+                                                                                                                                                                                                               .orb{
+                                                                                                                                                                                                                   position:absolute;
+                                                                                                                                                                                                                       border-radius:50%;
+                                                                                                                                                                                                                           filter:blur(70px);
+                                                                                                                                                                                                                               opacity:.6;
+                                                                                                                                                                                                                                   animation:float 12s ease-in-out infinite;
+                                                                                                                                                                                                                                   }
+
+                                                                                                                                                                                                                                   .orb1{
+                                                                                                                                                                                                                                       width:280px;
+                                                                                                                                                                                                                                           height:280px;
+                                                                                                                                                                                                                                               background:#ff4d8d;
+                                                                                                                                                                                                                                                   top:-80px;
+                                                                                                                                                                                                                                                       left:-80px;
+                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                       .orb2{
+                                                                                                                                                                                                                                                           width:350px;
+                                                                                                                                                                                                                                                               height:350px;
+                                                                                                                                                                                                                                                                   background:#8a2be2;
+                                                                                                                                                                                                                                                                       top:25%;
+                                                                                                                                                                                                                                                                           right:-120px;
+                                                                                                                                                                                                                                                                               animation-delay:2s;
+                                                                                                                                                                                                                                                                               }
+
+                                                                                                                                                                                                                                                                               .orb3{
+                                                                                                                                                                                                                                                                                   width:260px;
+                                                                                                                                                                                                                                                                                       height:260px;
+                                                                                                                                                                                                                                                                                           background:#6a00ff;
+                                                                                                                                                                                                                                                                                               bottom:-80px;
+                                                                                                                                                                                                                                                                                                   left:30%;
+                                                                                                                                                                                                                                                                                                       animation-delay:4s;
+                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                       @keyframes float{
+                                                                                                                                                                                                                                                                                                           0%{
+                                                                                                                                                                                                                                                                                                                   transform:translateY(0) translateX(0) scale(1);
+                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                                                                                           50%{
+                                                                                                                                                                                                                                                                                                                                   transform:translateY(-40px) translateX(20px) scale(1.1);
+                                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                                                                                                           100%{
+                                                                                                                                                                                                                                                                                                                                                   transform:translateY(0) translateX(0) scale(1);
+                                                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                                                                                                                       } 
 }
