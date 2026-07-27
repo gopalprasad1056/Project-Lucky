@@ -32,5 +32,6 @@ window.addEventListener("load", () => {
                                                                                                                         
                                                                                                                                 // Open Surprise button
                                                                                                                                 document.getElementById("startBtn").addEventListener("click", () => {
-                                                                                                                                    alert("Happy Birthday Lucky! ❤️");
-                                                                                                                                    });
+                                                                                                                                        window.location.href = "surprise.html";
+                                                                                                                                        });
+                                                                                                                            
