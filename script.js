@@ -23,12 +23,13 @@ window.addEventListener("load", () => {
 
                                                                                                                 document.body.appendChild(heart);
 
-                                                                                                                    setTimeout(() => {
-                                                                                                                            heart.remove();
-                                                                                                                                }, 6000);
-                                                                                                                                }
+                                                                                                                 setTimeout(() => {
+                                                                                                                        heart.remove();
+                                                                                                                        }, 6000);
+                                                                                                                        }
 
-                                                                                                                                setInterval(createHeart, 300);
+                                                                                                                        setInterval(createHeart, 300);
+                                                                                                                        
                                                                                                                                 // Open Surprise button
                                                                                                                                 document.getElementById("startBtn").addEventListener("click", () => {
                                                                                                                                     alert("Happy Birthday Lucky! ❤️");
